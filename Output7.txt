@@ -1,0 +1,39 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- working_directory(CWD,'/Users/manas/Desktop/ArtificalIntelligenceLabs').
+CWD = '/Users/manas/'.
+
+?- pwd.
+% /Users/manas/Desktop/ArtificalIntelligenceLabs/
+true.
+
+?- [assignment7].
+true.
+
+?- halfSister(X,Y).
+X = sylvia,
+Y = ann .
+
+?- halfSister(X,Y).
+X = sylvia,
+Y = ann ;
+X = ann,
+Y = sylvia.
+
+?- halfSister(ann,sylvia).
+true .
+
+?- halfSister(ann,X).
+X = sylvia.
+
+?- uncle(X,Y).
+X = keith,
+Y = ann .
+
+?- uncle(X,ann).
+X = keith .
