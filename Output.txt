@@ -1,0 +1,60 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- working_directory(CWD,'/Users/manas/Desktop/ArtificalIntelligenceLabs').
+CWD = '/Users/manas/'.
+
+?- pwd.
+% /Users/manas/Desktop/ArtificalIntelligenceLabs/
+true.
+
+?- [assignment6].
+true.
+
+?- parent(manas)
+|    .
+ERROR: Unknown procedure: parent/1
+ERROR:     However, there are definitions for:
+ERROR:         parent/3
+false.
+
+?- parent(manas,X,Y)
+|    .
+X = manojit,
+Y = manju.
+
+?- parent(manas,X,Y).
+X = manojit,
+Y = manju.
+
+?- parent(debraj,X,Y).
+X = deepak,
+Y = archana.
+
+?- parent(manasi,X,Y).
+X = monotosh,
+Y = bijali.
+
+?- likes(manas,X).
+X = biriyani.
+
+?- likes(anumoy,X).
+X = leetcode.
+
+?- mutual(manas,biriyani).
+false.
+
+?- mutual(dishari,debargha).
+true.
+
+
+?- mutual(debargha,X).
+X = dishari.
+
+?- mutual(X,Y).
+X = debargha,
+Y = dishari .
